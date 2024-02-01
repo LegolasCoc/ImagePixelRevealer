@@ -132,7 +132,7 @@ class ImagePixelRevealerApp:
                 self.revealed_pixels.add((x, y))
                 self.display_revealed_image(self.revealed_image)
                 self.master.update()
-                time.sleep(0.0000000000000000000000000000000000001 / speed)
+                time.sleep(0.01 / speed)
 
             # Update the label displaying the number of revealed pixels
             self.update_pixel_count_label()
